@@ -1,6 +1,7 @@
-// Baza pytań - Wprowadzenie do zarządzania (WDZ) - 62 pytania z 8 lekcji.
+// Baza pytań - Wprowadzenie do zarządzania (WDZ) - 116 pytań z 8 lekcji.
 // Każde pytanie zawiera uzasadnienie poprawnej odpowiedzi oraz sekcję "Warto wiedzieć",
-// oparte na materiałach źródłowych kursu (Temat 1-8).
+// oparte na materiałach źródłowych kursu (Temat 1-8) oraz na drugim zestawie pytań
+// egzaminacyjnych, porównanym z bazą i uzupełnionym o nowe, niepowtarzające się treści.
 
 const QUESTIONS = [
   // LEKCJA 1 - Podstawy zarządzania
@@ -699,5 +700,617 @@ const QUESTIONS = [
     ],
     uzasadnienie: "Odzież z second-handu to typowy przykład dobra niższego rzędu – konsumenci sięgają po nią głównie z konieczności finansowej, a gdy ich dochód rośnie, z ulgą z niej rezygnują na rzecz towarów lepszej jakości. Ujemna elastyczność dochodowa (Edi<0) właśnie to opisuje: wzrost dochodu powoduje spadek popytu na dane dobro.",
     wartoWiedziec: "Sprzedawcy dóbr niższego rzędu są jedynymi na rynku, którzy nie zyskują na wzbogaceniu się swoich klientów – to odróżnia ich od sprzedawców dóbr normalnych (Edi>0), które dzielą się na dobra podstawowe (np. pasta do zębów – popyt rośnie wolniej niż dochód) oraz dobra luksusowe (np. biżuteria czy sushi – popyt rośnie szybciej niż dochód).",
+  },
+
+  // Dodatkowe pytania z drugiego zestawu (porównanie i uzupełnienie bazy)
+
+  // LEKCJA 1 - Podstawy zarządzania
+  {
+    id: 65, lekcja: 1, lekcjaName: "Podstawy zarządzania",
+    question: "Cztery podstawowe funkcje kierownicze to:",
+    options: [
+      { key: "a", text: "przyjmowanie do pracy, kontrolowanie, ocenianie, zwalnianie", correct: false },
+      { key: "b", text: "planowanie, organizowanie, kierowanie, kontrolowanie", correct: true },
+      { key: "c", text: "planowanie, negocjowanie, budżetowanie, kontrolowanie", correct: false },
+    ],
+    uzasadnienie: "Klasyczny podział funkcji kierowniczych obejmuje planowanie (wyznaczanie celów), organizowanie (przydzielanie zadań i zasobów), kierowanie/przewodzenie (motywowanie ludzi do współpracy) oraz kontrolowanie (pomiar efektów i wprowadzanie korekt). To fundament, na którym opierają się wszystkie inne narzędzia zarządzania.",
+    wartoWiedziec: "Podział ten spopularyzował francuski inżynier i teoretyk zarządzania Henri Fayol, twórca także 14 zasad zarządzania (m.in. podziału pracy, jedności rozkazodawstwa czy ładu). Choć od czasów Fayola minęło ponad 100 lat, te cztery funkcje wciąż stanowią podstawę większości podręczników do zarządzania.",
+  },
+  {
+    id: 66, lekcja: 1, lekcjaName: "Podstawy zarządzania",
+    question: "Interesariusze organizacji to inaczej:",
+    options: [
+      { key: "a", text: "akcjonariusze organizacji", correct: false },
+      { key: "b", text: "klienci organizacji", correct: false },
+      { key: "c", text: "wszyscy zainteresowani kondycją organizacji", correct: true },
+    ],
+    uzasadnienie: "Interesariusze (ang. stakeholders) to szersza kategoria niż tylko akcjonariusze czy klienci – obejmuje wszystkie podmioty zainteresowane kondycją firmy i mające na nią wpływ, m.in. pracowników, klientów, dostawców, rządy, media czy lokalną społeczność.",
+    wartoWiedziec: "Akcjonariusze (shareholders) to tylko jedna, wąska grupa interesariuszy – ci, którzy mają bezpośredni udział kapitałowy w firmie. Współczesne zarządzanie coraz częściej podkreśla konieczność uwzględniania interesów wszystkich grup interesariuszy, nie tylko właścicieli, m.in. w ramach koncepcji społecznej odpowiedzialności biznesu (CSR).",
+  },
+
+  // LEKCJA 2 - Struktura organizacyjna
+  {
+    id: 67, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Niektóre ważne czynniki wpływające na budowę struktury organizacyjnej to:",
+    options: [
+      { key: "a", text: "nie ma żadnych ważnych czynników, budowa struktury organizacyjnej to zbędna formalność", correct: false },
+      { key: "b", text: "przede wszystkim różnego rodzaju kodeksy — struktury wszystkich organizacji są ściśle określone prawnie", correct: false },
+      { key: "c", text: "strategia organizacji, jej kultura, misja, cele i charakter działalności, wielkość i geograficzny zakres jej działalności czy stosowane technologie", correct: true },
+    ],
+    uzasadnienie: "Struktura organizacyjna nie powstaje przypadkowo ani nie jest odgórnie narzucona przez prawo — kształtuje ją zestaw czynników (determinantów) specyficznych dla danej firmy: jej strategia, misja, kultura, wielkość, zasięg geograficzny działalności oraz stosowana technologia.",
+    wartoWiedziec: "To dlatego dwie firmy z tej samej branży mogą mieć zupełnie inne struktury – mała, lokalna piekarnia potrzebuje prostej struktury liniowej, a globalna korporacja z wieloma oddziałami raczej struktury dywizjonalnej lub holdingowej. Zmiana strategii firmy (np. ekspansja zagraniczna) niemal zawsze wymusza też przebudowę jej struktury organizacyjnej.",
+  },
+  {
+    id: 68, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Punktem wyjścia do budowy struktury organizacyjnej jest:",
+    options: [
+      { key: "a", text: "podział pracy", correct: true },
+      { key: "b", text: "ilość posiadanego kapitału", correct: false },
+      { key: "c", text: "prawna forma organizacji", correct: false },
+    ],
+    uzasadnienie: "Zanim zaprojektuje się hierarchię czy zasady raportowania, trzeba najpierw zdecydować, jak podzielić całościowe zadanie organizacji na mniejsze, przypisywalne konkretnym stanowiskom części — czyli dokonać podziału pracy. To on determinuje, jakie stanowiska w ogóle powstaną i jak będą się do siebie odnosić.",
+    wartoWiedziec: "Podział pracy (specjalizacja) to jeden z najstarszych i najważniejszych mechanizmów w teorii organizacji – opisywał go już Adam Smith na przykładzie fabryki szpilek, pokazując, że rozbicie produkcji na proste, powtarzalne czynności wielokrotnie zwiększa wydajność w porównaniu do sytuacji, gdy jeden pracownik wykonuje cały proces samodzielnie.",
+  },
+  {
+    id: 69, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Im wyższy jest stopień fizycznego rozproszenia geograficznego podwładnych (np. praca w wielu odległych oddziałach), tym:",
+    options: [
+      { key: "a", text: "szersza powinna być rozpiętość kierowania", correct: false },
+      { key: "b", text: "węższa powinna być rozpiętość kierowania", correct: true },
+      { key: "c", text: "rozpiętość kierowania nie ma znaczenia", correct: false },
+    ],
+    uzasadnienie: "Im bardziej podwładni są rozproszeni geograficznie, tym trudniej kierownikowi efektywnie ich nadzorować i koordynować ich pracę – dlatego rozpiętość kierowania (liczba osób podległych jednemu szefowi) powinna być w takiej sytuacji węższa niż w przypadku zespołu pracującego w jednym miejscu.",
+    wartoWiedziec: "Rozpiętość kierowania zależy też od innych czynników: kwalifikacji podwładnych (wyższe kwalifikacje pozwalają na szerszą RK), stopnia formalizacji (więcej procedur pisemnych pozwala na szerszą RK) oraz częstości występowania nowych, nietypowych problemów (im częstsze, tym węższa RK potrzebna, by kierownik zdążył pomóc w ich rozwiązaniu).",
+  },
+  {
+    id: 70, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Decentralizacji organizacji (przesunięciu władzy decyzyjnej w dół hierarchii) sprzyja:",
+    options: [
+      { key: "a", text: "zatrudnienie wysoce kompetentnej kadry kierowniczej średniego i niższego szczebla", correct: true },
+      { key: "b", text: "stabilne otoczenie organizacji", correct: false },
+      { key: "c", text: "potrzeba częstego podejmowania decyzji strategicznych wysokiego szczebla", correct: false },
+    ],
+    uzasadnienie: "Decentralizacja polega na przekazywaniu uprawnień decyzyjnych niższym szczeblom zarządzania, co jest bezpieczne i skuteczne tylko wtedy, gdy ci menedżerowie średniego i niższego szczebla mają wystarczające kompetencje, by podejmować trafne decyzje samodzielnie, bez każdorazowej konsultacji z centralą.",
+    wartoWiedziec: "Decentralizacji sprzyja też niestabilne, dynamicznie zmieniające się otoczenie – w takich warunkach czekanie na decyzję centrali oznacza utratę cennego czasu, więc lepiej, by decyzje zapadały bliżej miejsca, w którym pojawia się problem (por. zasada delegowania uprawnień).",
+  },
+  {
+    id: 71, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Zasada delegowania uprawnień mówi, że:",
+    options: [
+      { key: "a", text: "przydzielenie danemu stanowisku zadań musi się wiązać z przyznaniem odpowiednich uprawnień i odpowiedzialności", correct: false },
+      { key: "b", text: "uprawnienia decyzyjne powinny być zlokalizowane możliwie jak najbliżej miejsca, w którym występują problemy wymagające podjęcia decyzji", correct: true },
+      { key: "c", text: "kierownik powinien za wszelką cenę unikać przekazywania swoich uprawnień podwładnym", correct: false },
+    ],
+    uzasadnienie: "Zasada delegowania uprawnień głosi, że decyzje powinny zapadać jak najbliżej miejsca, w którym pojawia się problem — dzięki temu są podejmowane szybciej i przez osoby najlepiej znające lokalny kontekst, zamiast czekać na decyzję z odległej centrali.",
+    wartoWiedziec: "Nie należy mylić tej zasady z zasadą równoważności, która mówi, że zadania muszą iść w parze z odpowiednimi uprawnieniami i odpowiedzialnością (to opisuje raczej pierwsza z błędnych odpowiedzi w tym pytaniu) – to dwie różne, choć powiązane zasady organizacyjne.",
+  },
+  {
+    id: 72, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Za jedną z wad formalizacji (stopnia pisemnego zdefiniowania celów i procedur) należy uznać:",
+    options: [
+      { key: "a", text: "instytucjonalizację doświadczenia organizacji", correct: false },
+      { key: "b", text: "zmniejszenie potrzeby koordynacji organizacji poprzez hierarchię", correct: false },
+      { key: "c", text: "usztywnienie organizacji", correct: true },
+    ],
+    uzasadnienie: "Wysoki stopień formalizacji, choć daje stabilność i odciąża kierowników, ma też swoją cenę: usztywnia organizację, utrudniając szybkie reagowanie na nietypowe sytuacje niewpisujące się w istniejące procedury (tzw. wyuczona nieudolność).",
+    wartoWiedziec: "Formalizacja ma też zalety, wymienione błędnie jako wady w dystraktorach tego pytania: instytucjonalizacja doświadczenia (spisane procedury zachowują wiedzę organizacji nawet po odejściu pracowników) oraz zmniejszenie potrzeby bieżącej koordynacji przez hierarchię (bo pracownicy sami znajdują odpowiedzi w dokumentacji).",
+  },
+  {
+    id: 73, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Trener Gmoch, który analizuje taktyki drużyn zagranicznych i przekazuje wnioski trenerowi Górskiemu (podejmującemu decyzje o składzie i taktyce), zajmował stanowisko:",
+    options: [
+      { key: "a", text: "liniowe", correct: false },
+      { key: "b", text: "sztabowe", correct: true },
+      { key: "c", text: "wykonawcze", correct: false },
+    ],
+    uzasadnienie: "Trener Gmoch dostarczał ekspercką analizę i rekomendacje, ale to trener Górski podejmował ostateczne decyzje o taktyce i składzie — to klasyczny przykład stanowiska sztabowego (doradczego, eksperckiego), które nie wydaje bezpośrednich poleceń, w odróżnieniu od stanowisk liniowych, które faktycznie zarządzają podwładnymi i podejmują decyzje.",
+    wartoWiedziec: "Trzeci typ stanowisk to stanowiska wykonawcze – zajmują się bezpośrednim tworzeniem produktu lub usługi (np. sami piłkarze na boisku), bez funkcji zarządczych czy doradczych. Konflikty między sztabem a linią są częste – linia bywa nieufna wobec „oderwanej od realiów” wiedzy sztabu, a sztab czuje, że jego rekomendacje są ignorowane.",
+  },
+  {
+    id: 74, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Jednym z powodów konfliktów między Sztabem a Linią może być:",
+    options: [
+      { key: "a", text: "nieuznawanie przez Linię autorytetu i przydatności w praktyce wiedzy Sztabu", correct: true },
+      { key: "b", text: "precyzyjne określenie zakresu kompetencji Linii i Sztabu", correct: false },
+      { key: "c", text: "integrowanie działalności Linii i Sztabu", correct: false },
+    ],
+    uzasadnienie: "Menedżerowie liniowi, odpowiedzialni za bieżące wyniki i mający bezpośredni kontakt z realiami operacyjnymi, często nie doceniają wiedzy eksperckiej sztabu, uznając ją za teoretyczną, oderwaną od praktyki lub zbędną — to jedno z głównych źródeł napięć między tymi dwoma typami stanowisk.",
+    wartoWiedziec: "Precyzyjne określenie zakresu kompetencji obu stron oraz świadome integrowanie ich działalności to z kolei sposoby na ZAPOBIEGANIE takim konfliktom, a nie ich przyczyny – dobrze zaprojektowana struktura liniowo-sztabowa stara się właśnie unikać tych napięć, jasno rozdzielając role doradcze od decyzyjnych.",
+  },
+  {
+    id: 75, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Do jednej z zalet struktury smukłej (z dużą liczbą szczebli hierarchii i małą rozpiętością kierowania) zaliczamy:",
+    options: [
+      { key: "a", text: "długi kanał przekazywania informacji", correct: false },
+      { key: "b", text: "dużą samodzielność pracowników", correct: false },
+      { key: "c", text: "możliwość dokładnej i bieżącej kontroli pracy podwładnych", correct: true },
+    ],
+    uzasadnienie: "Wąska rozpiętość kierowania w strukturze smukłej oznacza, że każdy kierownik nadzoruje niewielu podwładnych, co pozwala na dokładną, bieżącą kontrolę ich pracy. To odróżnia strukturę smukłą od płaskiej, gdzie szeroka rozpiętość kierowania wymusza większą samodzielność pracowników, bo kierownik fizycznie nie jest w stanie kontrolować wszystkich na bieżąco.",
+    wartoWiedziec: "Długi kanał przekazywania informacji, wymieniony w dystraktorze, jest w rzeczywistości WADĄ struktury smukłej — im więcej szczebli hierarchii musi przejść informacja, tym większe ryzyko jej zniekształcenia lub opóźnienia (tzw. efekt głuchego telefonu).",
+  },
+  {
+    id: 76, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Jedną z typowych cech struktury funkcjonalnej jest:",
+    options: [
+      { key: "a", text: "jedność rozkazodawstwa", correct: false },
+      { key: "b", text: "łatwość utrzymania dyscypliny", correct: false },
+      { key: "c", text: "podział organizacji na różne wyspecjalizowane działy, np. marketingu, produkcji, księgowości", correct: true },
+    ],
+    uzasadnienie: "Struktura funkcjonalna organizuje firmę wokół wyspecjalizowanych działów odpowiadających poszczególnym funkcjom biznesowym (marketing, produkcja, finanse, HR itd.), w których pracownicy grupowani są według rodzaju wykonywanej pracy, a nie np. obsługiwanego produktu czy regionu.",
+    wartoWiedziec: "W klasycznej wersji struktura funkcjonalna łamie zasadę jedności rozkazodawstwa – pracownik może otrzymywać polecenia od kilku wyspecjalizowanych kierowników jednocześnie (np. od kierownika produkcji i kierownika jakości), co odróżnia ją od struktury liniowej, gdzie jedność rozkazodawstwa jest ściśle zachowana.",
+  },
+  {
+    id: 77, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Do charakterystycznych cech struktury liniowo-sztabowej zaliczamy:",
+    options: [
+      { key: "a", text: "jednoczesne uzyskanie jedności rozkazodawstwa i specjalistycznego wsparcia dla zarządzania", correct: true },
+      { key: "b", text: "złamanie zasady jedności rozkazodawstwa", correct: false },
+      { key: "c", text: "brak możliwości uzyskania przez kierowników liniowych specjalistycznego wsparcia", correct: false },
+    ],
+    uzasadnienie: "Struktura liniowo-sztabowa łączy zalety struktury liniowej (jedność rozkazodawstwa — pracownik ma tylko jednego przełożonego) z dostępem do specjalistycznej wiedzy komórek doradczych (sztabu), które wspierają kierowników liniowych merytorycznie, ale nie wydają im bezpośrednich poleceń.",
+    wartoWiedziec: "To właśnie próba połączenia najlepszych cech obu prostszych struktur (liniowej i funkcjonalnej) czyni strukturę liniowo-sztabową jedną z najpopularniejszych form organizacyjnych we współczesnych średnich i dużych firmach.",
+  },
+  {
+    id: 78, lekcja: 2, lekcjaName: "Struktura organizacyjna",
+    question: "Struktura z dyrekcją generalną na czele oraz podległymi jej gigantycznymi pionami funkcjonalnymi (np. HR, Finanse, R&D, Produkcja) obejmującymi całą organizację to:",
+    options: [
+      { key: "a", text: "struktura dywizjonalna (D/M)", correct: false },
+      { key: "b", text: "struktura holdingowa (H)", correct: false },
+      { key: "c", text: "struktura funkcjonalna (U)", correct: true },
+    ],
+    uzasadnienie: "Struktura U-funkcjonalna (uniwersalna) to typ struktury makroorganizacyjnej stosowany w dużych firmach, w której całą organizację dzieli się na gigantyczne piony funkcjonalne (np. cały dział HR, cały dział finansów) podległe bezpośrednio dyrekcji generalnej — w przeciwieństwie do struktury dywizjonalnej, gdzie każda dywizja ma własne, lokalne funkcje wsparcia.",
+    wartoWiedziec: "Pozostałe dwie struktury makroorganizacyjne to: struktura holdingowa (H) — zbiór niezależnych, niepowiązanych ze sobą jednostek ocenianych tylko za wyniki, oraz struktura dywizjonalna (D/M) — samodzielne dywizje wg produktu lub geografii, gdzie centrala kontroluje tylko kluczowe decyzje strategiczne i finanse.",
+  },
+
+  // LEKCJA 3 - Szkoły zarządzania
+  {
+    id: 79, lekcja: 3, lekcjaName: "Szkoły zarządzania",
+    question: "Jaką odpowiedź na pytanie o źródło „bogactwa narodów” dał Adam Smith?",
+    options: [
+      { key: "a", text: "złoto i srebro", correct: false },
+      { key: "b", text: "żyzna ziemia", correct: false },
+      { key: "c", text: "praca ludzka", correct: true },
+    ],
+    uzasadnienie: "Adam Smith, autor „Bogactwa narodów” (1776), przeciwstawił się merkantylistycznemu przekonaniu, że bogactwo kraju to zgromadzone złoto i srebro. Uznał, że prawdziwym źródłem bogactwa jest praca ludzka — a konkretnie jej produktywność, którą można znacząco zwiększyć dzięki podziałowi pracy.",
+    wartoWiedziec: "Smith zilustrował to na słynnym przykładzie fabryki szpilek: jeden robotnik pracujący samodzielnie mógłby wykonać najwyżej kilkadziesiąt szpilek dziennie, ale dziesięciu robotników, z których każdy wykonuje jedną wyspecjalizowaną czynność w łańcuchu produkcyjnym, może wyprodukować ich razem kilkadziesiąt tysięcy.",
+  },
+  {
+    id: 80, lekcja: 3, lekcjaName: "Szkoły zarządzania",
+    question: "Adam otrzymał propozycję samodzielnego, ambitnego projektu (otwarcie nowej filii) i bardzo się ucieszył. Zgodnie z hierarchią potrzeb Maslowa, która potrzeba nie była u niego wcześniej spełniana?",
+    options: [
+      { key: "a", text: "potrzeba przynależności", correct: false },
+      { key: "b", text: "potrzeba samorealizacji", correct: true },
+      { key: "c", text: "potrzeba bezpieczeństwa", correct: false },
+    ],
+    uzasadnienie: "Samodzielny, ambitny projekt daje możliwość realizacji własnych pomysłów, rozwoju kompetencji i osiągnięcia czegoś znaczącego — to właśnie potrzeba samorealizacji, znajdująca się na szczycie hierarchii Maslowa. Entuzjastyczna reakcja Adama sugeruje, że wcześniej nie miał okazji jej zaspokoić w swojej dotychczasowej, rutynowej pracy.",
+    wartoWiedziec: "Według Maslowa potrzeby niższego rzędu (fizjologiczne, bezpieczeństwa, przynależności, szacunku) muszą być zaspokojone, zanim człowiek zacznie dążyć do samorealizacji. Menedżerowie chcący zmotywować pracowników poprzez ambitne projekty powinni więc najpierw upewnić się, że podstawowe potrzeby zespołu (stabilność zatrudnienia, dobre relacje w zespole) są już spełnione.",
+  },
+  {
+    id: 81, lekcja: 3, lekcjaName: "Szkoły zarządzania",
+    question: "Które z poniższych zdań wypowiedziałby zwolennik teorii Y Douglasa McGregora?",
+    options: [
+      { key: "a", text: "ludzie z natury są ambitni i chcą dobrze pracować", correct: true },
+      { key: "b", text: "ludzie z natury są leniwi, gdyby wygrali dużo pieniędzy, do końca życia nic by nie robili", correct: false },
+      { key: "c", text: "wydajność pracy możemy zapewnić poprzez ścisłą i surową kontrolę pracy ludzi", correct: false },
+    ],
+    uzasadnienie: "Teoria Y McGregora to optymistyczny pogląd na naturę ludzką w pracy: zakłada, że ludzie z natury chcą pracować, są ambitni, zdolni do samokontroli i szukania nowych rozwiązań, a praca jest dla nich naturalną potrzebą rozwoju. Pozostałe dwa zdania to typowe przekonania zwolennika pesymistycznej teorii X.",
+    wartoWiedziec: "McGregor był osobiście gorącym zwolennikiem teorii Y i uważał, że to często sposób traktowania pracowników przez menedżera — a nie „prawdziwa” natura ludzka — decyduje, czy pracownicy będą zachowywać się zgodnie z założeniami teorii X, czy teorii Y (efekt samospełniającej się przepowiedni).",
+  },
+  {
+    id: 82, lekcja: 3, lekcjaName: "Szkoły zarządzania",
+    question: "Które z następujących zdań mogłoby zostać wypowiedziane przez reprezentanta szkoły systemowej?",
+    options: [
+      { key: "a", text: "w pracy skup się na swoim zadaniu i nie interesuj się innymi działami", correct: false },
+      { key: "b", text: "organizacja powinna być jak najbardziej odizolowana od otoczenia", correct: false },
+      { key: "c", text: "pamiętaj, że jakość wykonania butów w dziale produkcji będzie mieć wpływ na efektywność działu marketingu", correct: true },
+    ],
+    uzasadnienie: "Szkoła systemowa postrzega organizację jako system otwarty — zestaw wzajemnie powiązanych części wchodzących w interakcję ze sobą i z otoczeniem. Zgodnie z tym podejściem, wynik pracy jednego działu (np. jakość produktu z produkcji) nieuchronnie wpływa na inne działy (np. na to, jak łatwo dział marketingu będzie mógł sprzedać ten produkt).",
+    wartoWiedziec: "Dwie pozostałe odpowiedzi reprezentują dokładne przeciwieństwo myślenia systemowego – izolowanie się od innych działów i od otoczenia jest charakterystyczne dla organizacji traktowanej jako system zamknięty, co szkoła systemowa uznaje za błędne i nieefektywne podejście do zarządzania.",
+  },
+
+  // LEKCJA 4 - Zarządzanie zasobami ludzkimi
+  {
+    id: 83, lekcja: 4, lekcjaName: "Zarządzanie zasobami ludzkimi",
+    question: "Wieloletnie, zaufane relacje firmy z bankiem finansującym jej inwestycje oraz z kluczowymi dostawcami surowców zaliczamy do zasobów:",
+    options: [
+      { key: "a", text: "rynkowych", correct: false },
+      { key: "b", text: "relacyjnych", correct: true },
+      { key: "c", text: "organizacyjnych", correct: false },
+    ],
+    uzasadnienie: "Zasoby relacyjne to więzi firmy z jej otoczeniem — np. relacje z bankami, kontrahentami czy dostawcami — które budują się latami i są trudne do skopiowania przez konkurencję, dając realną przewagę w postaci lepszych warunków finansowania czy priorytetowej obsługi.",
+    wartoWiedziec: "To jeden z tzw. zasobów nowoczesnych, obok zasobów rynkowych (marka, lojalność klientów, kanały dystrybucji), własności intelektualnej (patenty, know-how) oraz zasobów organizacyjnych (struktura, kultura firmy, systemy zarządzania). Razem uzupełniają one klasyczny podział na zasoby ludzkie, finansowe, rzeczowe i informacyjne.",
+  },
+  {
+    id: 84, lekcja: 4, lekcjaName: "Zarządzanie zasobami ludzkimi",
+    question: "Które z poniższych pytań zadanych kandydatce podczas rozmowy kwalifikacyjnej jest niewłaściwe i niedopuszczalne w świetle prawa?",
+    options: [
+      { key: "a", text: "\"Czy może Pani powiedzieć kilka słów o sobie?\"", correct: false },
+      { key: "b", text: "\"Czy ucieszył Panią wynik ostatnich wyborów w Polsce?\"", correct: true },
+      { key: "c", text: "\"Jakie są Pani słabe strony?\"", correct: false },
+    ],
+    uzasadnienie: "Pytanie o poglądy polityczne kandydatki (np. o stosunek do wyników wyborów) nie ma żadnego związku z jej kompetencjami zawodowymi i narusza zasadę równego traktowania w zatrudnieniu — podobnie jak pytania o plany rodzinne czy stan zdrowia. Pytania o autoprezentację czy słabe strony są natomiast standardowym i w pełni dopuszczalnym elementem rekrutacji.",
+    wartoWiedziec: "Poza poglądami politycznymi prawo zabrania też pytań o m.in. plany macierzyńskie, orientację seksualną, przynależność związkową czy stan zdrowia niezwiązany bezpośrednio z wymaganiami stanowiska. Zasada jest prosta: selekcja kandydatów powinna opierać się wyłącznie na obiektywnych wymaganiach danej pracy.",
+  },
+  {
+    id: 85, lekcja: 4, lekcjaName: "Zarządzanie zasobami ludzkimi",
+    question: "Grzegorz przyznał Adamowi podwyżkę po obejrzeniu jego dyplomu ukończenia prestiżowych studiów. Jakie kryterium oceny zastosował?",
+    options: [
+      { key: "a", text: "efektywnościowe", correct: false },
+      { key: "b", text: "formalne", correct: true },
+      { key: "c", text: "behawioralne", correct: false },
+    ],
+    uzasadnienie: "Kryterium formalne opiera się na udokumentowanych kwalifikacjach pracownika — dyplomach, certyfikatach, ukończonych kursach — a nie na jego rzeczywistych wynikach pracy (kryterium efektywnościowe) czy postawach i zachowaniu w zespole (kryterium behawioralne).",
+    wartoWiedziec: "Poleganie wyłącznie na kryteriach formalnych bywa ryzykowne — świetny dyplom nie zawsze przekłada się na realne wyniki w pracy. Dlatego dobre systemy oceny pracowników łączą wszystkie trzy typy kryteriów: formalne, efektywnościowe i behawioralne, by uzyskać pełniejszy obraz kompetencji danej osoby.",
+  },
+  {
+    id: 86, lekcja: 4, lekcjaName: "Zarządzanie zasobami ludzkimi",
+    question: "Marek ocenił projekt Ady — debiutantki w finale ogólnopolskiego konkursu — wyjątkowo surowo, mimo że był on obiektywnie dobry jak na pierwszą próbę. Jaki błąd popełnił Marek?",
+    options: [
+      { key: "a", text: "błąd surowości", correct: true },
+      { key: "b", text: "błąd atrybucji", correct: false },
+      { key: "c", text: "efekt pierwszego wrażenia", correct: false },
+    ],
+    uzasadnienie: "Marek systematycznie zaniżył ocenę, nie uwzględniając kontekstu (debiut, pierwsza próba) — to typowy błąd surowości, polegający na nieproporcjonalnie krytycznym ocenianiu, niezależnie od faktycznej jakości pracy.",
+    wartoWiedziec: "Błąd surowości ma swoje lustrzane odbicie — błąd łagodności, czyli systematyczne zawyżanie ocen. Oba zniekształcają rzeczywisty obraz kompetencji ocenianych osób i utrudniają sprawiedliwe porównywanie pracowników między sobą, np. przy podejmowaniu decyzji o awansach czy premiach.",
+  },
+
+  // LEKCJA 5 - Motywacja i przywództwo
+  {
+    id: 87, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Według teorii sprawiedliwości Johna Adamsa:",
+    options: [
+      { key: "a", text: "każdy pracownik powinien dostawać premię w takiej samej wysokości", correct: false },
+      { key: "b", text: "pracownicy porównują wynagrodzenia, które otrzymali za swoją pracę, do wynagrodzeń otrzymanych przez kolegów z pracy", correct: true },
+      { key: "c", text: "każdy powinien skupić się na swojej pracy i nie porównywać się do innych", correct: false },
+    ],
+    uzasadnienie: "Według teorii sprawiedliwości ludzie nieustannie oceniają, czy otrzymana nagroda jest sprawiedliwa w stosunku do poniesionych nakładów (czasu, wysiłku, doświadczenia), porównując się przy tym z innymi osobami, np. kolegami z pracy wykonującymi podobne zadania.",
+    wartoWiedziec: "Jeśli pracownik dojdzie do wniosku, że został potraktowany niesprawiedliwie (np. otrzymał niższą premię niż kolega za tę samą pracę), jego motywacja gwałtownie spada — może ograniczyć swój wkład, zażądać podwyżki, a nawet zmienić osobę, z którą się porównuje. Warto pamiętać, że poczucie niesprawiedliwości kumulujące się przez dłuższy czas potrafi w pewnym momencie gwałtownie „wybuchnąć”.",
+  },
+  {
+    id: 88, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Według teorii wzmocnienia Burrhusa Skinnera:",
+    options: [
+      { key: "a", text: "pracownicy nie będą się spóźniać, jeśli będą wiedzieć, że za każde spóźnienie stracą część premii, a za brak spóźnień otrzymają premię o 20% wyższą", correct: true },
+      { key: "b", text: "pracownicy nie będą się spóźniać, jeśli wytłumaczymy im wagę ich pracy dla społeczeństwa", correct: false },
+      { key: "c", text: "pracownicy nie będą się spóźniać, jeśli szef będzie dawał dobry przykład i sam zawsze przychodził na czas", correct: false },
+    ],
+    uzasadnienie: "Skinner, jeden z najważniejszych przedstawicieli behawioryzmu, uważał, że zachowania ludzi (podobnie jak zwierząt) są kształtowane przez bodźce zewnętrzne — nagrody i kary — a nie przez wewnętrzne przekonania czy cudzy przykład. Jasno określony, konsekwentnie stosowany system premii i kar (np. za spóźnienia) skutecznie wzmacnia pożądane zachowania.",
+    wartoWiedziec: "Teoria wzmocnienia była krytykowana za ignorowanie czynników wewnętrznych, takich jak poczucie decyzyjności — badania pokazały, że pracownicy pracują wydajniej, gdy czują, że sami sprawują kontrolę nad sytuacją, a nie działają wyłącznie ze strachu przed karą narzuconą z zewnątrz.",
+  },
+  {
+    id: 89, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Dyrektor zakładu obuwniczego obawia się, że podwyżka płac o postulowane 20% mogłaby realnie zagrozić płynności finansowej firmy. Której funkcji płacy dotyczy ten przykład?",
+    options: [
+      { key: "a", text: "kosztowej", correct: true },
+      { key: "b", text: "społecznej", correct: false },
+      { key: "c", text: "dochodowej", correct: false },
+    ],
+    uzasadnienie: "Funkcja kosztowa płacy dotyczy tego, że wynagrodzenia stanowią dla firmy realny koszt prowadzenia działalności — jeśli będą zbyt wysokie w stosunku do możliwości finansowych przedsiębiorstwa, mogą zagrozić jego płynności, a w skrajnym przypadku doprowadzić nawet do bankructwa.",
+    wartoWiedziec: "Płaca pełni w sumie cztery funkcje: dochodową (zaspokojenie potrzeb materialnych pracownika), motywacyjną (zachęta do lepszej pracy), kosztową (wydatek dla firmy) oraz społeczną (wyznacznik prestiżu i pozycji). Dobry system wynagrodzeń musi równoważyć wszystkie cztery, a nie skupiać się tylko na jednej z nich.",
+  },
+  {
+    id: 90, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Stefan, właściciel firmy, uważa, że najlepsi spośród przyjętych na staż studentów sami sobie poradzą i nie widzi sensu w przeprowadzaniu z nimi rozmów poznawczych na temat ich potrzeb i potencjału. Jakie podejście do rozwoju kariery zaprezentował Stefan?",
+    options: [
+      { key: "a", text: "niewidzialna ręka", correct: true },
+      { key: "b", text: "poszukiwanie pereł", correct: false },
+      { key: "c", text: "planowanie karier", correct: false },
+    ],
+    uzasadnienie: "Podejście „niewidzialna ręka” zakłada, że firma nie musi ingerować w rozwój kariery pracowników, bo najzdolniejsi i tak sami sobie poradzą — Stefan właśnie to zakłada, rezygnując ze świadomego rozpoznawania potencjału stażystów.",
+    wartoWiedziec: "Przeciwieństwem jest podejście „poszukiwanie pereł”, zakładające, że w firmie mogą kryć się ukryte talenty warte celowego odnalezienia i rozwinięcia, oraz „planowanie karier”, gdzie firma świadomie projektuje ścieżkę rozwoju każdego pracownika, łącząc jego indywidualne potrzeby z możliwościami organizacji.",
+  },
+  {
+    id: 91, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Jaka nagroda byłaby najlepszą motywacją do dalszej wytężonej pracy dla znakomicie ocenionej podczas oceny okresowej pracowniczki działu R&D, która zawsze uwielbiała się uczyć i zdobywać nową, wartościową wiedzę?",
+    options: [
+      { key: "a", text: "wyjazd integracyjny do 5-gwiazdkowego hotelu, pełen degustacji i zabaw", correct: false },
+      { key: "b", text: "wyjazd szkoleniowy do prestiżowego centrum naukowego na zaawansowany kurs w jej dziedzinie", correct: true },
+      { key: "c", text: "awans na stanowisko kierownicze dużego zespołu", correct: false },
+    ],
+    uzasadnienie: "Skuteczna nagroda musi być dopasowana do indywidualnych wartości i potrzeb konkretnego pracownika, a nie uniwersalna dla wszystkich. Skoro dana osoba zawsze najbardziej ceniła sobie zdobywanie wiedzy, możliwość udziału w zaawansowanym szkoleniu w jej dziedzinie będzie dla niej najlepszą, najbardziej motywującą nagrodą — znacznie skuteczniejszą niż standardowy wyjazd integracyjny czy awans na stanowisko kierownicze, które wiąże się z zupełnie innym zestawem obowiązków (zarządzanie ludźmi zamiast badań).",
+    wartoWiedziec: "To dobra ilustracja zasady indywidualizacji nagród i kar — jednego z warunków skuteczności systemu motywacyjnego. Nagroda, która nie odpowiada faktycznym wartościom i priorytetom danej osoby, może okazać się kompletnie nieskuteczna, nawet jeśli obiektywnie jest atrakcyjna dla większości ludzi.",
+  },
+  {
+    id: 92, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Pracownica ceniona za ogromną wiedzę finansową (studia, zdany egzamin na biegłego rewidenta, wieloletnie doświadczenie), z którą chętnie konsultuje się nawet sam prezes firmy, dysponuje władzą:",
+    options: [
+      { key: "a", text: "ekspercką", correct: true },
+      { key: "b", text: "odniesienia", correct: false },
+      { key: "c", text: "formalną (wynikającą ze stanowiska)", correct: false },
+    ],
+    uzasadnienie: "Władza ekspercka opiera się na posiadaniu specjalistycznej, unikatowej i ważnej z punktu widzenia organizacji wiedzy — dokładnie tak jak w przypadku pracownicy, której kompetencje finansowe (potwierdzone studiami i egzaminem na biegłego rewidenta) sprawiają, że nawet prezes firmy chętnie korzysta z jej rad, mimo że nie zajmuje ona stanowiska kierowniczego.",
+    wartoWiedziec: "Taką władzą może dysponować też np. znakomity szef kuchni w restauracji czy doświadczony informatyk sprawujący pieczę nad systemami firmy — w każdym przypadku źródłem wpływu nie jest formalne stanowisko ani charyzma, lecz unikatowa, trudna do zastąpienia wiedza.",
+  },
+  {
+    id: 93, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Według założeń ewolucyjnego modelu przywództwa Hersey'a i Blancharda:",
+    options: [
+      { key: "a", text: "styl lidera powinien być niezmienny", correct: false },
+      { key: "b", text: "lider powinien zachowywać się jednakowo wobec wszystkich pracowników", correct: false },
+      { key: "c", text: "styl lidera powinien się zmieniać w zależności od stopnia dojrzałości pracownika", correct: true },
+    ],
+    uzasadnienie: "Model ewolucyjny Hersey'a i Blancharda opiera się na założeniu, że relacja między przywódcą a podwładnym powinna rozwijać się w miarę nabierania doświadczenia przez podwładnego — na wzór relacji rodzic-dziecko. Lider powinien więc stopniowo zmieniać swój styl: od dyrektywnego na początku (gdy podwładni czują się niepewnie) do dawania dużej swobody, gdy są już bardzo samodzielni.",
+    wartoWiedziec: "To założenie stoi w bezpośredniej sprzeczności z modelem Fiedlera, który twierdzi, że indywidualny styl przywództwa danego lidera jest cechą stałą i niezmienną. Wadą modelu Hersey'a i Blancharda jest trudność w obiektywnym ustaleniu, na jakim dokładnie poziomie dojrzałości znajduje się dany podwładny.",
+  },
+  {
+    id: 94, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Mikołaj, wypełniając test NLW (Najmniej Lubianego Współpracownika), przyznał zaskakująco wysokie punkty koledze, którego jednocześnie najmniej lubił spośród całego zespołu. Jaki jest styl przywództwa Mikołaja według teorii Fiedlera?",
+    options: [
+      { key: "a", text: "zorientowany na ludzi (demokratyczny)", correct: true },
+      { key: "b", text: "zorientowany na zadania (autokratyczny)", correct: false },
+      { key: "c", text: "zmienny, w zależności od sytuacji", correct: false },
+    ],
+    uzasadnienie: "W kwestionariuszu NLW, im więcej punktów lider przyzna osobie, której najmniej lubi, tym bardziej jest to znak, że nawet w ocenie kogoś nielubianego stara się dostrzec jego pozytywne cechy — co świadczy o stylu zorientowanym na relacje (demokratycznym). Niski wynik oznaczałby styl zorientowany na zadania.",
+    wartoWiedziec: "Zgodnie z modelem Fiedlera styl lidera jest cechą stałą, zdiagnozowaną raz za pomocą testu NLW — nie zmienia się w zależności od sytuacji (to odróżnia model Fiedlera od modelu ewolucyjnego Hersey'a i Blancharda czy teorii ścieżki do celu, gdzie lider może dostosowywać swój styl).",
+  },
+  {
+    id: 95, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "Które z następujących zachowań jest najbardziej typowe dla przywódcy transformacyjnego?",
+    options: [
+      { key: "a", text: "przeprowadzenie rozmów z wszystkimi pracownikami działu w celu rozpoznania ich indywidualnych potrzeb", correct: false },
+      { key: "b", text: "skonstruowanie precyzyjnego systemu premii i kar", correct: false },
+      { key: "c", text: "wbiegnięcie w garniturze, z flagą firmy, do morza w celu pokazania podwładnym determinacji i wizji ekspansji firmy", correct: true },
+    ],
+    uzasadnienie: "Przywódcy transformacyjni to z reguły charyzmatyczni wizjonerzy, którzy prezentują niestandardowe, spektakularne zachowania, by przekonać podwładnych do swojej wizji wielkiej zmiany — dokładnie jak w tym symbolicznym, teatralnym geście. Rozpoznawanie indywidualnych potrzeb i konstruowanie systemów premiowych to z kolei typowe narzędzia liderów transakcyjnych, opierających zarządzanie na ciągłej wymianie nagród i kar.",
+    wartoWiedziec: "Przywódcy transformacyjni bywają kontrowersyjni i nie zawsze postrzegani pozytywnie — cechuje ich dążenie do realizacji wizji wielkiej zmiany organizacyjnej. Przykłady takich postaci ze świata biznesu to Steve Jobs, a z historii — postacie budzące skrajne emocje, jak Napoleon czy Mahatma Gandhi, których łączyła zdolność do budzenia silnej wewnętrznej motywacji u swoich zwolenników.",
+  },
+  {
+    id: 96, lekcja: 5, lekcjaName: "Motywacja i przywództwo",
+    question: "W której z opisanych poniżej sytuacji obecność przywódcy nie byłaby raczej konieczna?",
+    options: [
+      { key: "a", text: "grupa trzech doświadczonych stolarzy, pracujących w firmie od dziesięciu lat, ma zamontować standardową altankę dla znanego, wieloletniego klienta", correct: true },
+      { key: "b", text: "firma ma do wykonania nowatorski projekt, który nie jest jeszcze do końca doprecyzowany z klientem", correct: false },
+      { key: "c", text: "w czteroosobowej grupie narasta konflikt o podział zadań projektowych", correct: false },
+    ],
+    uzasadnienie: "Koncepcja substytutów przywództwa mówi, że obecność lidera nie zawsze jest konieczna — jej potrzebę redukują m.in. wysokie doświadczenie pracowników oraz jasno sprecyzowane, rutynowe zadania. Trzej doświadczeni stolarze montujący standardową, dobrze im znaną altankę dla stałego klienta dokładnie spełniają te warunki, więc nie potrzebują bieżącego nadzoru przywódcy.",
+    wartoWiedziec: "W przeciwieństwie do tego, nowatorski, niedoprecyzowany projekt oraz narastający konflikt w zespole to sytuacje, w których obecność przywódcy jest wręcz bardzo pożądana — brak jasnych wytycznych lub nierozwiązany konflikt to warunki, w których grupa bez lidera łatwo się gubi lub paraliżuje samą siebie.",
+  },
+
+  // LEKCJA 6 - Różnice międzykulturowe
+  {
+    id: 97, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "W społeczeństwach o wysokim wskaźniku męskości (MAS) kupuje się więcej:",
+    options: [
+      { key: "a", text: "luksusowej biżuterii", correct: true },
+      { key: "b", text: "kawy", correct: false },
+      { key: "c", text: "samochodów rodzinnych", correct: false },
+    ],
+    uzasadnienie: "Kultury o wysokim wskaźniku MAS (męskość) cenią asertywność, rywalizację, osiąganie sukcesu oraz dobra luksusowe jako symbol statusu i wygranej rywalizacji — stąd większy popyt na przedmioty takie jak luksusowa biżuteria, będące wizualnym dowodem sukcesu materialnego.",
+    wartoWiedziec: "Krajami o wysokim MAS są np. Japonia i Włochy, a przeciwny biegun (kultury „kobiece”, ceniące współpracę, dobre relacje i równowagę praca-życie) reprezentują np. Szwecja i Holandia. Warto nie mylić tego wymiaru z rzeczywistą płcią biologiczną — dotyczy on wartości cenionych przez całe społeczeństwo, niezależnie od płci jego członków.",
+  },
+  {
+    id: 98, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Które z poniższych działań jest typowe dla kultury kolektywistycznej (niski wskaźnik IDV)?",
+    options: [
+      { key: "a", text: "kontynuowanie przez syna tego samego zawodu, co ojciec i dziadek, zgodnie z oczekiwaniami rodziny", correct: true },
+      { key: "b", text: "przerwa w prestiżowych studiach na wymarzoną, samodzielną podróż rowerem dookoła świata", correct: false },
+      { key: "c", text: "zwolnienie z pracy niekompetentnego krewnego, mimo rodzinnych koneksji", correct: false },
+    ],
+    uzasadnienie: "Kultura kolektywistyczna stawia lojalność wobec grupy (rodziny, wspólnoty) ponad indywidualne cele i wybory jednostki. Kontynuowanie rodzinnego zawodu z pokolenia na pokolenie, zgodnie z oczekiwaniami rodziny, jest klasycznym przejawem takiej postawy — jednostka podporządkowuje swoje osobiste aspiracje tradycji i oczekiwaniom grupy.",
+    wartoWiedziec: "Pozostałe dwa przykłady reprezentują raczej indywidualizm: samodzielna, nieplanowana podróż wbrew utartej ścieżce (autonomia jednostki) oraz zwolnienie niekompetentnego krewnego (priorytet obiektywnych kryteriów nad lojalnością rodzinną) — w kulturach kolektywistycznych zatrudnianie krewnych jest zwykle traktowane jako wyraz zaufania, a nie nepotyzmu, i trudniej byłoby ich zwolnić.",
+  },
+  {
+    id: 99, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Odpowiedź „wszystko dobrze!”, wypowiedziana z szerokim uśmiechem na pytanie „co słychać?”, nawet gdy dzień był trudny, to znak kraju o:",
+    options: [
+      { key: "a", text: "niskim wskaźniku IVR (powściągliwość)", correct: false },
+      { key: "b", text: "wysokim wskaźniku IVR (tolerancja/przyzwolenie)", correct: true },
+      { key: "c", text: "wysokim wskaźniku UAI (unikanie niepewności)", correct: false },
+    ],
+    uzasadnienie: "Wysoki wskaźnik IVR (indulgence, tolerancja/przyzwolenie) oznacza swobodne, otwarte wyrażanie radości, zabawy i pozytywnych emocji jako coś naturalnego i społecznie akceptowanego — łatwy, entuzjastyczny uśmiech i pogodna odpowiedź na pytanie o samopoczucie dobrze to ilustrują.",
+    wartoWiedziec: "Przeciwieństwem jest niski IVR (powściągliwość), typowy np. dla niektórych krajów azjatyckich, gdzie normy społeczne silniej tłumią spontaniczne okazywanie emocji i dążenie do przyjemności, a odpowiedzi na pytania o samopoczucie bywają bardziej powściągliwe i stonowane.",
+  },
+  {
+    id: 100, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Który wybór kariery jest typowy dla kultury o wysokim wskaźniku unikania niepewności (UAI)?",
+    options: [
+      { key: "a", text: "założenie własnego zespołu muzycznego za pieniądze zarobione podczas pracy sezonowej", correct: false },
+      { key: "b", text: "niezmienianie stabilnej pracy w urzędzie na rzecz niepewnej, własnej działalności gospodarczej", correct: true },
+      { key: "c", text: "aplikowanie do firmy zaraz po jej przejęciu przez nowego, kontrowersyjnego właściciela", correct: false },
+    ],
+    uzasadnienie: "Wysoki wskaźnik UAI oznacza silny strach przed zmianami, niepewnością i ryzykiem oraz potrzebę stabilności — dokładnie to ilustruje wybór pozostania na pewnym, stabilnym etacie w urzędzie zamiast podjęcia ryzyka związanego z założeniem własnej firmy.",
+    wartoWiedziec: "Kraje o wysokim UAI to m.in. Grecja i Polska, gdzie ceni się sztywne przepisy i stabilne zatrudnienie. Niskie UAI (np. Singapur, USA) wiąże się z większą akceptacją ryzyka jako naturalnej części życia zawodowego i mniejszą liczbą barier formalnych do podjęcia nowych, niepewnych przedsięwzięć.",
+  },
+  {
+    id: 101, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Zdanie: „Nie można im ufać, oni zawsze pomogą przyjacielowi [nawet łamiąc zasady]” najprawdopodobniej wypowiedzą:",
+    options: [
+      { key: "a", text: "przedstawiciele kultury kolektywistycznej o indywidualistach", correct: false },
+      { key: "b", text: "uniwersaliści o partykularystach", correct: true },
+      { key: "c", text: "partykularyści o uniwersalistach", correct: false },
+    ],
+    uzasadnienie: "Uniwersaliści uważają, że reguły i umowy powinny obowiązywać zawsze, bez wyjątków i bez względu na relacje osobiste. Taka krytyka — zarzut, że komuś „nie można ufać”, bo bez wahania łamie zasady dla dobra przyjaciela — jest typowym stanowiskiem uniwersalistów wobec partykularystów, dla których to właśnie konkretne relacje i okoliczności decydują o zastosowaniu reguł.",
+    wartoWiedziec: "Partykularyzm jest typowy np. dla Rosji, gdzie zachowanie i stosowanie zasad zależy od konkretnych okoliczności i relacji (w tym pomocy przyjaciołom), podczas gdy uniwersalizm charakteryzuje np. Szwajcarię, gdzie sztywne reguły i umowy obowiązują zawsze, niezależnie od sytuacji czy tego, kogo dotyczą.",
+  },
+  {
+    id: 102, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "W kulturze o statusie przypisanym (a nie osiąganym):",
+    options: [
+      { key: "a", text: "bardzo prawdopodobne jest, że szefem zostanie niemłody mężczyzna pochodzący z szanowanej w okolicy rodziny", correct: true },
+      { key: "b", text: "szefem zostanie osoba, która ma za sobą najwyższą, wymierną efektywność sprzedaży", correct: false },
+      { key: "c", text: "w pracy nie używa się żadnych tytułów niezwiązanych bezpośrednio z pełnioną funkcją", correct: false },
+    ],
+    uzasadnienie: "Status przypisany oznacza, że szacunek i pozycja społeczna wynikają z cech takich jak wiek, płeć, pochodzenie czy przynależność do określonej klasy społecznej, a nie z osobistych osiągnięć — stąd w takich kulturach starszy mężczyzna z szanowanej rodziny ma dużą szansę objąć stanowisko kierownicze niezależnie od jego rzeczywistych kompetencji zawodowych.",
+    wartoWiedziec: "Przeciwieństwem jest status osiągany, typowy np. dla Norwegii, gdzie szacunek wynika z osobistego sukcesu, wykształcenia i realnych dokonań (jak w opcji o efektywności sprzedaży) — czyli z tego, co dana osoba faktycznie zrobiła, a nie kim jest z urodzenia.",
+  },
+  {
+    id: 103, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "„Kupimy ziemniaki od nielubianego Adama, bo jego oferta jest najlepsza cenowo” — takie podejście do biznesu jest typowe dla kultury:",
+    options: [
+      { key: "a", text: "kolektywistycznej", correct: false },
+      { key: "b", text: "wycinkowej", correct: true },
+      { key: "c", text: "całościowej", correct: false },
+    ],
+    uzasadnienie: "Kultura wycinkowa oddziela sferę biznesową od prywatnej — oferta jest oceniana czysto merytorycznie, na podstawie obiektywnych kryteriów (tu: ceny), niezależnie od osobistych sympatii czy antypatii wobec sprzedawcy.",
+    wartoWiedziec: "W kulturze całościowej (np. w Chinach), gdzie sfery życia się przenikają, interesy robi się niemal wyłącznie z ludźmi, których się dobrze zna, lubi i sprawdziło prywatnie — sam fakt niechęci do Adama prawdopodobnie wykluczyłby go jako partnera biznesowego, niezależnie od atrakcyjności jego oferty cenowej.",
+  },
+  {
+    id: 104, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Jan poczuł się urażony, gdy Wiktor przerwał mu w pół zdania, wyrażając entuzjastyczną, emocjonalną zgodę na jego propozycję. Jaki można wyciągnąć z tego wniosek?",
+    options: [
+      { key: "a", text: "Jan to przedstawiciel kultury o wyższej powściągliwości, a Wiktor — o wyższej emocjonalności", correct: true },
+      { key: "b", text: "Jan to przedstawiciel kultury o wyższej emocjonalności, a Wiktor — o wyższej powściągliwości", correct: false },
+      { key: "c", text: "Jan to kolektywista, a Wiktor indywidualista", correct: false },
+    ],
+    uzasadnienie: "Jan poczuł się urażony samym faktem przerwania mu w trakcie wypowiedzi — nawet w formie entuzjastycznej zgody — co wskazuje na kulturę o wyższej powściągliwości, ceniącą kontrolę emocji i dystans. Wiktor natomiast, spontanicznie i entuzjastycznie przerywający rozmówcy, reprezentuje kulturę o wyższej emocjonalności, w której bezpośrednie, żywiołowe wyrażanie uczuć jest naturalne i akceptowane.",
+    wartoWiedziec: "Powściągliwość jest typowa np. dla Japonii, gdzie utrzymuje się surową kontrolę uczuć i dystans emocjonalny w kontaktach zawodowych, podczas gdy emocjonalność charakteryzuje np. Egipt, gdzie spontaniczne, silne wyrażanie emocji jest czymś naturalnym i oczekiwanym, a nie oznaką braku profesjonalizmu.",
+  },
+  {
+    id: 105, lekcja: 6, lekcjaName: "Różnice międzykulturowe",
+    question: "Które powiedzenie najlepiej pasuje do kultury wewnątrzsterownej?",
+    options: [
+      { key: "a", text: "„Każdy jest kowalem swego losu”", correct: true },
+      { key: "b", text: "„Taka karma”", correct: false },
+      { key: "c", text: "„Nasz los zapisany jest w gwiazdach”", correct: false },
+    ],
+    uzasadnienie: "Kultura wewnątrzsterowna opiera się na przekonaniu o pełnej kontroli jednostki nad własnym losem — powiedzenie „każdy jest kowalem swego losu” doskonale oddaje tę filozofię: to nasze własne decyzje i wysiłek, a nie zewnętrzne siły, kształtują naszą przyszłość.",
+    wartoWiedziec: "Kultury wewnątrzsterowne (np. USA) cechuje przekonanie o pełnej kontroli nad własnym losem i skłonność do agresywnej walki konkurencyjnej, podczas gdy kultury zewnątrzsterowne (np. Chiny) akceptują wpływ otoczenia, losu czy sił wyższych na bieg wydarzeń i dążą raczej do harmonijnej współpracy z otoczeniem niż do jego kontrolowania.",
+  },
+
+  // LEKCJA 7 - Zarządzanie strategiczne
+  {
+    id: 106, lekcja: 7, lekcjaName: "Zarządzanie strategiczne",
+    question: "Misja Google, według oficjalnej deklaracji firmy, brzmi:",
+    options: [
+      { key: "a", text: "uporządkowanie światowych zasobów informacji i uczynienie ich powszechnie dostępnymi i użytecznymi", correct: true },
+      { key: "b", text: "umożliwienie osiągania więcej każdej osobie i organizacji na świecie", correct: false },
+      { key: "c", text: "edukacja obywateli i przygotowanie ich do przewodzenia w społeczeństwie", correct: false },
+    ],
+    uzasadnienie: "Oficjalna misja Google to „zorganizowanie światowych zasobów informacji oraz uczynienie ich powszechnie dostępnymi i użytecznymi”. Dobra misja organizacji powinna być realistyczna, dopasowana do jej rzeczywistej działalności i motywująca dla pracowników — właśnie taka jest misja Google, ściśle powiązana z jej podstawowym biznesem wyszukiwania informacji.",
+    wartoWiedziec: "Pozostałe dwie opcje to również prawdziwe misje znanych organizacji, tylko przypisane do niewłaściwych firm: „umożliwienie osiągania więcej każdej osobie i organizacji na świecie” to misja Microsoftu, a „edukacja obywateli” nawiązuje do misji Harvard College. To dobry przykład na to, że misja powinna być specyficzna — jasno odróżniająca daną organizację od innych, nawet działających w podobnej branży.",
+  },
+  {
+    id: 107, lekcja: 7, lekcjaName: "Zarządzanie strategiczne",
+    question: "Do zagrożeń w analizie SWOT uczelni o profilu informatycznym (np. PJATK) zaliczymy:",
+    options: [
+      { key: "a", text: "niż demograficzny", correct: true },
+      { key: "b", text: "rosnącą popularność produktów wegańskich", correct: false },
+      { key: "c", text: "brak parkingu dla studentów w pobliżu uczelni", correct: false },
+    ],
+    uzasadnienie: "Niż demograficzny to niekorzystny trend zachodzący w otoczeniu uczelni (mniejszy przyrost naturalny oznacza mniej potencjalnych kandydatów na studia w nadchodzących latach) — to klasyczne zagrożenie zewnętrzne w analizie SWOT, niezależne od działań samej uczelni.",
+    wartoWiedziec: "Rosnąca popularność produktów wegańskich jest zupełnie niezwiązana z działalnością uczelni informatycznej, więc nie stanowi dla niej ani szansy, ani zagrożenia. Brak parkingu to z kolei słaba strona (czynnik wewnętrzny, zależny od samej uczelni), a nie zagrożenie zewnętrzne — łatwo pomylić te dwie kategorie SWOT, warto więc zawsze pytać: czy to coś, na co uczelnia ma bezpośredni wpływ, czy nie?",
+  },
+  {
+    id: 108, lekcja: 7, lekcjaName: "Zarządzanie strategiczne",
+    question: "Do której kategorii macierzy BCG koncern Amazon zaliczyłby swoją platformę streamingową Amazon Live, działającą na dynamicznie rosnącym, ale wciąż mocno rozdrobnionym rynku, na którym Amazon ma jeszcze niewielki udział?",
+    options: [
+      { key: "a", text: "znaki zapytania", correct: true },
+      { key: "b", text: "gwiazdy", correct: false },
+      { key: "c", text: "dojne krowy", correct: false },
+    ],
+    uzasadnienie: "Znak zapytania to kategoria BCG opisująca produkty z małym udziałem w szybko rosnącym rynku — dokładnie taką pozycję zajmuje Amazon Live: rynek streamingu rośnie dynamicznie, ale Amazon nie ma na nim jeszcze dominującej pozycji. Takie produkty wymagają dużych inwestycji, by ewentualnie przekształcić się w „gwiazdę”.",
+    wartoWiedziec: "W tej samej analizie BCG dla Amazona tradycyjne e-booki (dojrzały rynek, dominująca pozycja) to „dojna krowa”, a rozwiązania cloud computing (SaaS), na dynamicznie rosnącym rynku z silną pozycją Amazona, to „gwiazda” — pokazuje to, że duża firma może jednocześnie mieć produkty we wszystkich czterech ćwiartkach macierzy BCG.",
+  },
+  {
+    id: 109, lekcja: 7, lekcjaName: "Zarządzanie strategiczne",
+    question: "W macierzy McKinseya (GE), ekskluzywne apartamenty na wynajem, będące liderem rynku w bardzo atrakcyjnym segmencie, powinny zostać zakwalifikowane do strategii:",
+    options: [
+      { key: "a", text: "inwestuj/rozwijaj", correct: true },
+      { key: "b", text: "utrzymuj/rozwijaj selektywnie", correct: false },
+      { key: "c", text: "ograniczaj/wycofuj", correct: false },
+    ],
+    uzasadnienie: "Macierz McKinseya klasyfikuje jednostki biznesowe na podstawie dwóch wieloczynnikowych wymiarów: atrakcyjności branży oraz siły danej jednostki na rynku. Segment ekskluzywnych apartamentów, będący jednocześnie bardzo atrakcyjny i mający silną, wiodącą pozycję rynkową, spełnia oba warunki najwyższej kategorii — należy więc w niego dalej inwestować i go rozwijać.",
+    wartoWiedziec: "Macierz McKinseya (stworzona przez firmę doradczą McKinsey we współpracy z General Electric) jest rozwinięciem prostszej macierzy BCG — zamiast dwóch pojedynczych miar (tempo wzrostu rynku i względny udział w rynku) stosuje bardziej złożone, wieloczynnikowe wskaźniki, co pozwala na bardziej precyzyjną analizę portfela produktów firmy.",
+  },
+  {
+    id: 110, lekcja: 7, lekcjaName: "Zarządzanie strategiczne",
+    question: "Co można uznać za wyróżniającą się kompetencję (core competency) firmy McDonald's, leżącą u podstaw jej globalnego sukcesu?",
+    options: [
+      { key: "a", text: "oferowanie wyjątkowo zdrowych posiłków o niskiej zawartości tłuszczu, soli i cukru", correct: false },
+      { key: "b", text: "zdolność do skutecznego standaryzowania i skalowania operacji przy jednoczesnym dostosowywaniu się do lokalnych warunków na całym świecie", correct: true },
+      { key: "c", text: "tworzenie wyjątkowo atrakcyjnych, wysoko opłacanych miejsc pracy", correct: false },
+    ],
+    uzasadnienie: "Wyróżniająca się kompetencja to unikatowa umiejętność organizacyjna, trudna do skopiowania przez konkurencję, leżąca u podstaw przewagi konkurencyjnej firmy. McDonald's zawdzięcza swój globalny sukces właśnie zdolności do zachowania spójnych standardów jakości i procesów operacyjnych przy jednoczesnym elastycznym dostosowywaniu menu i podejścia do lokalnych rynków (tzw. „myśl globalnie, działaj lokalnie”).",
+    wartoWiedziec: "Zdrowa żywność i wysokie wynagrodzenia nie są tradycyjnie kojarzone z modelem biznesowym McDonald's — to raczej obszary, w których firma bywa krytykowana. Wyróżniająca się kompetencja to zawsze coś, co firma robi wyjątkowo dobrze na tle konkurencji i co realnie napędza jej sukces rynkowy, a nie ogólnie pożądana cecha.",
+  },
+
+  // LEKCJA 8 - Podstawy ekonomii
+  {
+    id: 111, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Dobra wolne to inaczej:",
+    options: [
+      { key: "a", text: "dobra dostępne bez ograniczeń, do których każdy ma bezpłatny dostęp (np. powietrze)", correct: true },
+      { key: "b", text: "dobra niezatrzymane przez celników na granicy", correct: false },
+      { key: "c", text: "dobra wytwarzane przez człowieka w celu zaspokojenia potrzeb", correct: false },
+    ],
+    uzasadnienie: "Dobra wolne to dobra naturalne, występujące w praktycznie nieograniczonej ilości, do których każdy ma darmowy, nieograniczony dostęp — klasycznym przykładem jest powietrze czy woda w naturalnym środowisku. Przeciwieństwem są dobra ekonomiczne, czyli dobra rzadkie, zwykle wytworzone przez człowieka, do których dostęp jest ograniczony i najczęściej płatny.",
+    wartoWiedziec: "Rozróżnienie to jest fundamentalne dla całej ekonomii, która zajmuje się właśnie zarządzaniem dobrami rzadkimi (ekonomicznymi) w warunkach ograniczonych zasobów wobec nieograniczonych potrzeb ludzkich. Dobra wolne, ze względu na swoją powszechną dostępność, nie podlegają typowej analizie rynkowej podaży i popytu.",
+  },
+  {
+    id: 112, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Przy dokonywaniu racjonalnego wyboru ekonomicznego powinniśmy brać pod uwagę:",
+    options: [
+      { key: "a", text: "tylko nasze bieżące potrzeby, bez uwzględniania dostępnych środków", correct: false },
+      { key: "b", text: "hierarchię potrzeb oraz dostępność posiadanych środków", correct: true },
+      { key: "c", text: "wyłącznie subiektywną atrakcyjność rozważanego dobra", correct: false },
+    ],
+    uzasadnienie: "Racjonalny wybór ekonomiczny to decyzja oparta na hierarchii potrzeb (co jest dla nas ważniejsze) oraz na dostępności środków (ile faktycznie możemy sobie pozwolić wydać), dążąca do maksymalizacji rezultatu przy minimalizacji nakładów, z uwzględnieniem kosztu alternatywnego podjętej decyzji.",
+    wartoWiedziec: "W praktyce ludzie często dokonują wyborów nieracjonalnych, kierując się emocjami, chwilowym impulsem czy właśnie samą subiektywną atrakcyjnością dobra, bez realnej oceny, czy dana potrzeba jest priorytetowa i czy stać nas na jej zaspokojenie — ekonomia behawioralna bada właśnie takie odstępstwa od modelu racjonalnego konsumenta.",
+  },
+  {
+    id: 113, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Pojęcie ceteris paribus, często stosowane w modelach ekonomicznych, oznacza:",
+    options: [
+      { key: "a", text: "wszystko inne bez zmian", correct: true },
+      { key: "b", text: "przez ciernie do gwiazd", correct: false },
+      { key: "c", text: "jeśli chcesz pokoju, szykuj się do wojny", correct: false },
+    ],
+    uzasadnienie: "Ceteris paribus to łacińskie założenie modelowe oznaczające „wszystko inne bez zmian” — pozwala ono badać zależność między dwoma wybranymi czynnikami (np. ceną a popytem) w izolacji od wpływu wszystkich pozostałych zmiennych rynkowych, które w rzeczywistości też mogłyby się zmieniać.",
+    wartoWiedziec: "Bez założenia ceteris paribus analiza ekonomiczna byłaby znacznie trudniejsza — w prawdziwym świecie wiele czynników zmienia się jednocześnie (np. cena, dochody konsumentów, ceny dóbr substytucyjnych), więc izolowanie wpływu jednej zmiennej to podstawowe narzędzie upraszczające budowę modeli ekonomicznych.",
+  },
+  {
+    id: 114, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Struktura rynku, w której dane towary oferuje kilku dużych sprzedawców (np. rynek telefonii komórkowej), to:",
+    options: [
+      { key: "a", text: "konkurencja monopolistyczna", correct: false },
+      { key: "b", text: "konkurencja doskonała", correct: false },
+      { key: "c", text: "oligopol", correct: true },
+    ],
+    uzasadnienie: "Oligopol to struktura rynkowa zdominowana przez kilku dużych producentów/sprzedawców, którzy mają na tyle duży udział w rynku, że ich decyzje (np. cenowe) wzajemnie na siebie wpływają — typowym przykładem jest rynek telefonii komórkowej, gdzie działa zwykle tylko kilku znaczących operatorów.",
+    wartoWiedziec: "To odróżnia oligopol od konkurencji doskonałej (bardzo wielu sprzedawców identycznego produktu, żaden nie wpływa samodzielnie na cenę rynkową) oraz od konkurencji monopolistycznej (dość duża liczba sprzedawców oferujących podobne, ale zróżnicowane marką lub cechami produkty).",
+  },
+  {
+    id: 115, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Obrazy pewnego malarza zyskały na popularności (wzrósł na nie popyt) po tym, jak wzrosła ich i tak już bardzo wysoka cena. Mamy do czynienia z:",
+    options: [
+      { key: "a", text: "paradoksem Giffena", correct: false },
+      { key: "b", text: "paradoksem Veblena", correct: true },
+      { key: "c", text: "standardową, odwrotną relacją między ceną a popytem", correct: false },
+    ],
+    uzasadnienie: "Paradoks Veblena dotyczy dóbr luksusowych (tzw. dóbr Veblena), których cechą wyróżniającą jest wysoka cena jako symbol prestiżu i statusu majątkowego — im wyższa cena, tym silniejszy efekt demonstracji zamożności, co paradoksalnie zwiększa, a nie zmniejsza popyt. Dzieła sztuki są klasycznym przykładem takich dóbr.",
+    wartoWiedziec: "Nie należy mylić paradoksu Veblena z paradoksem Giffena, który dotyczy zupełnie odwrotnej sytuacji — dóbr pierwszej potrzeby (jak chleb) kupowanych przez najuboższych konsumentów, u których wzrost ceny paradoksalnie też zwiększa popyt, ale z zupełnie innego powodu: braku środków na droższe substytuty, a nie chęci demonstrowania statusu.",
+  },
+  {
+    id: 116, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Cena śliwek wzrosła o 12%, a w reakcji na to popyt na nie spadł o 10%. Popyt na śliwki jest:",
+    options: [
+      { key: "a", text: "elastyczny", correct: false },
+      { key: "b", text: "nieelastyczny", correct: true },
+      { key: "c", text: "doskonale elastyczny", correct: false },
+    ],
+    uzasadnienie: "Elastyczność cenowa popytu to stosunek procentowej zmiany popytu do procentowej zmiany ceny: 10% / 12% ≈ 0,83, czyli wartość mniejsza niż 1. Oznacza to, że popyt reaguje na zmianę ceny słabiej niż proporcjonalnie — jest więc nieelastyczny.",
+    wartoWiedziec: "Gdy popyt jest nieelastyczny (Edp<1), podwyżka ceny zazwyczaj zwiększa łączny utarg sprzedawcy, bo procentowy spadek liczby sprzedanych sztuk jest mniejszy niż procentowy wzrost ceny jednostkowej — to przeciwna sytuacja niż w przypadku popytu elastycznego (Edp>1), gdzie podwyżka ceny obniża utarg.",
+  },
+  {
+    id: 117, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Elastyczność cenowa popytu (Edp) pewnego dobra X wynosi 0. Oznacza to, że:",
+    options: [
+      { key: "a", text: "jeśli zmieni się cena dobra X, popyt na nie pozostanie dokładnie taki sam", correct: true },
+      { key: "b", text: "jeśli zmieni się cena dobra X, popyt na nie zmieni się w dokładnie tej samej proporcji", correct: false },
+      { key: "c", text: "cena dobra X jest stała i nie może się zmienić", correct: false },
+    ],
+    uzasadnienie: "Popyt doskonale nieelastyczny (sztywny), czyli Edp=0, oznacza, że wielkość popytu w ogóle nie reaguje na zmiany ceny — konsumenci kupią dokładnie tę samą ilość danego dobra niezależnie od tego, ile ono kosztuje. Klasycznym przykładem jest jedyny na rynku lek ratujący życie, na który popyt pozostaje stały bez względu na cenę.",
+    wartoWiedziec: "To skrajny przeciwny biegun w stosunku do popytu doskonale elastycznego (Edp→∞), gdzie nawet minimalna podwyżka ceny całkowicie zeruje sprzedaż — typowego dla warunków konkurencji doskonałej, gdzie każdy sprzedawca oferuje identyczny produkt i nie ma żadnej swobody cenowej.",
+  },
+  {
+    id: 118, lekcja: 8, lekcjaName: "Podstawy ekonomii",
+    question: "Elastyczność mieszana (krzyżowa) popytu dwóch dóbr A i B jest dodatnia (Edx(py)>0). Oznacza to, że dobra A i B są:",
+    options: [
+      { key: "a", text: "niezależne jedno od drugiego", correct: false },
+      { key: "b", text: "dobrami komplementarnymi", correct: false },
+      { key: "c", text: "substytutami", correct: true },
+    ],
+    uzasadnienie: "Dodatnia elastyczność mieszana popytu oznacza, że wzrost ceny jednego dobra powoduje wzrost popytu na drugie — a to charakteryzuje dobra substytucyjne (zamienne), jak masło i margaryna: gdy masło drożeje, konsumenci częściej sięgają po tańszą margarynę.",
+    wartoWiedziec: "Sytuacja odwrotna — ujemna elastyczność mieszana — charakteryzuje dobra komplementarne (uzupełniające się), jak kawa i śmietanka, gdzie wzrost ceny jednego dobra obniża popyt na drugie, bo konsumuje się je zwykle razem.",
   },
 ];
