@@ -1,7 +1,7 @@
 // Logika interaktywnego quizu WDZ - zawsze pełny test ze wszystkich pytań w losowej kolejności.
 
 const state = {
-  screen: "start", // start | quiz | summary
+  screen: "start", // start | quiz | summary | browse
   pool: [],
   currentIndex: 0,
   selectedKey: null,
@@ -71,6 +71,17 @@ function restart() {
   render();
 }
 
+function openBrowse() {
+  state.screen = "browse";
+  render();
+  window.scrollTo(0, 0);
+}
+
+function closeBrowse() {
+  state.screen = "start";
+  render();
+}
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -84,6 +95,7 @@ function render() {
   if (state.screen === "start") renderStart();
   else if (state.screen === "quiz") renderQuiz();
   else if (state.screen === "summary") renderSummary();
+  else if (state.screen === "browse") renderBrowse();
 }
 
 function renderStart() {
@@ -92,10 +104,76 @@ function renderStart() {
     <p class="subtitle">Wprowadzenie do zarządzania - baza ${QUESTIONS.length} pytań z 8 lekcji. Test zawsze obejmuje wszystkie pytania, w losowej kolejności.</p>
     <div class="card">
       <button class="btn full" id="startBtn">Rozpocznij test</button>
+      <button class="btn full secondary" id="browseBtn">Przeglądaj wszystkie pytania</button>
     </div>
   `;
 
   document.getElementById("startBtn").addEventListener("click", startQuiz);
+  document.getElementById("browseBtn").addEventListener("click", openBrowse);
+}
+
+function renderBrowse() {
+  const byLekcja = {};
+  QUESTIONS.forEach(q => {
+    if (!byLekcja[q.lekcja]) byLekcja[q.lekcja] = { name: q.lekcjaName, items: [] };
+    byLekcja[q.lekcja].items.push(q);
+  });
+  const lekcjaKeys = Object.keys(byLekcja).sort((a, b) => a - b);
+
+  const navHtml = lekcjaKeys.map(lek => `
+    <a class="chapter-nav-link" href="#lekcja-${lek}">
+      Lekcja ${lek} — ${escapeHtml(byLekcja[lek].name)}
+      <span class="chapter-nav-count">${byLekcja[lek].items.length} pyt.</span>
+    </a>
+  `).join("");
+
+  const sectionsHtml = lekcjaKeys.map(lek => {
+    const questionsHtml = byLekcja[lek].items.map(q => {
+      const optionsHtml = q.options.map(opt => {
+        const cls = opt.correct ? "browse-option correct" : "browse-option";
+        return `
+          <div class="${cls}">
+            <span class="browse-option-text">${escapeHtml(opt.text)}</span>
+            ${opt.correct ? '<span class="browse-option-badge">Poprawna odpowiedź</span>' : ""}
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <div class="browse-question">
+          <p class="question-text">${escapeHtml(q.question)}</p>
+          <div class="options browse-options">${optionsHtml}</div>
+          <div class="explain-box">
+            <div class="explain-title">Uzasadnienie</div>
+            <div class="explain-text">${escapeHtml(q.uzasadnienie)}</div>
+          </div>
+          <div class="tip-box">
+            <div class="tip-title">💡 Warto wiedzieć</div>
+            <div class="tip-text">${escapeHtml(q.wartoWiedziec)}</div>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    return `
+      <div class="browse-chapter" id="lekcja-${lek}">
+        <h2 class="browse-chapter-title"><span class="chapter-tag">Lekcja ${lek}</span>${escapeHtml(byLekcja[lek].name)}</h2>
+        ${questionsHtml}
+      </div>
+    `;
+  }).join("");
+
+  appEl.innerHTML = `
+    <div class="browse-top">
+      <button class="btn secondary" id="backBtn">← Powrót</button>
+      <h1>Baza pytań</h1>
+    </div>
+    <p class="subtitle">Wszystkie ${QUESTIONS.length} pytań wraz z poprawną odpowiedzią, uzasadnieniem i sekcją "Warto wiedzieć".</p>
+    <div class="chapter-nav">${navHtml}</div>
+    ${sectionsHtml}
+  `;
+
+  document.getElementById("backBtn").addEventListener("click", closeBrowse);
 }
 
 function renderQuiz() {
