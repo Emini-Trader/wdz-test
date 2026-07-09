@@ -184,6 +184,48 @@ h1 {
 .verdict-banner.pass { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
 .verdict-banner.fail { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
 
+.explain-box {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+.explain-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--accent-2);
+  margin-bottom: 6px;
+}
+.explain-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.tip-box {
+  background: rgba(242, 201, 76, 0.1);
+  border: 1px solid #f2c94c;
+  border-left: 3px solid #f2c94c;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+.tip-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #f2c94c;
+  margin-bottom: 6px;
+}
+.tip-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
 .actions-row {
   display: flex;
   justify-content: flex-end;

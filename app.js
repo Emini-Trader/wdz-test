@@ -132,11 +132,23 @@ function renderQuiz() {
   }).join("");
 
   let verdictHtml = "";
+  let explainHtml = "";
   if (state.answered) {
     const last = state.results[state.results.length - 1];
     verdictHtml = last.correct
       ? `<div class="verdict-banner pass">✓ Poprawna odpowiedź!</div>`
       : `<div class="verdict-banner fail">✗ Niepoprawna odpowiedź.</div>`;
+
+    explainHtml = `
+      <div class="explain-box">
+        <div class="explain-title">Uzasadnienie</div>
+        <div class="explain-text">${escapeHtml(q.uzasadnienie)}</div>
+      </div>
+      <div class="tip-box">
+        <div class="tip-title">💡 Warto wiedzieć</div>
+        <div class="tip-text">${escapeHtml(q.wartoWiedziec)}</div>
+      </div>
+    `;
   }
 
   const pctDone = Math.round((state.currentIndex / total) * 100);
@@ -151,6 +163,7 @@ function renderQuiz() {
       <p class="question-text">${escapeHtml(q.question)}</p>
       <div class="options">${optionsHtml}</div>
       ${verdictHtml}
+      ${explainHtml}
       <div class="actions-row">
         ${state.answered
           ? `<button class="btn" id="nextBtn">${num === total ? "ZOBACZ PODSUMOWANIE" : "NASTĘPNE PYTANIE"}</button>`
